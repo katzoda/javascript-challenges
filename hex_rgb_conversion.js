@@ -32,7 +32,7 @@ const convertColorFormat = ((...color) => {
 			hexSymbols.forEach((sym, in2) => {
 				if (color[trackerIndex] === sym) {
 					// to determine which exponent (16 to exp) to use
-					// if trackerIndex is even number then exp is 0 (and I know that 16**0 = 1)
+					// if trackerIndex is even number then exp is 0
 					if (trackerIndex % 2 === 0) {
 						let decNum = (in2 + 10) * (16 ** 1);
 						converted.push(decNum);
